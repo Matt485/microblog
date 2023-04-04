@@ -1,0 +1,16 @@
+version: "3"
+services:
+  microblog:
+    image: debian:lts
+    working_dir: /code
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    volumes:
+      - ./Microblog/src:/code/microblog
+    command:
+      ['sh', '-cx', "python manage.py runserver"]
+    networks:
+      public:
+networks:
+  public:
