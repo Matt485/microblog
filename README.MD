@@ -1,6 +1,6 @@
 # Microblog
 ___
-![](https://img.shields.io/github/license/Matt485/microblog)
+![](https://img.shields.io/github/license/Matt485/microblog#)
 ![](https://img.shields.io/github/actions/workflow/status/Matt485/microblog/django.yml)
 ![](https://img.shields.io/github/languages/code-size/matt485/microblog)
 ![](https://img.shields.io/github/issues/matt485/microblog)
