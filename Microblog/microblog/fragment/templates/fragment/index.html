@@ -1,0 +1,39 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<div id="explanation_text">
+  <p>Microblog is an engine to self host your own tiny blog and those of your friends. You can post text updates, audio, images, all without distraction</p>
+  <h3>Features:</h3>
+  <ul>
+    <li>Free and Open-source forever</li>
+    <li>Basic Auth through Django</li>
+    <li>Easy deployment with Docker and Podman-Compose</li>
+    <li>Fast</li>
+    <li>Distraction-Free</li>
+    <li>Custom CSS support</li>
+  </ul>
+</div>
+<div id="box_content">
+  <section id="last_blogs">
+    <h2>Top Blogs</h2>
+  </section>
+  <section id="last_posts">
+    <h2>Last Posts</h2>
+    {% if latest_posts_list %}
+    <ul>
+      {% for post in latest_posts_list %}
+      <li><a href="/fragment/{{ post.id }}/">{{ post.post_text }}</a></li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No posts are available.</p>
+    {% endif %}
+  </section>
+  <section id="register">
+    <h2>Create Yours Today!</h2>
+    <button>Register</button>
+  </section>
+</div>
+
+{% endblock %}

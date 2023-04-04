@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block title %}<title>Microblob</title>{% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="" rel="stylesheet" integrity="" crossorigin="anonymous"> -->
+    <!-- Add additional CSS in static file -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  </head>
+  <body>
+    <div id="gen_menu">
+      {% if user.is_authenticated %}
+        <a href="/account/logout">Log out</a>
+        <a href="/account/">Account</a>
+      {% else %}
+        <a href="/account/login">Log in</a>
+        <a href="/register/">Register</a>
+      {% endif %}
+    </div>
+    <div id="main">
+      <div class="logo">
+        <a href="/"><img src="/static/icons/logo_big.svg" alt="Microblog logo"/></a>
+      </div>
+      <div class="menu">
+        <!-- Put here people navmenu -->
+      </div>
+      <div id="base_content">
+      {% block content %}{% endblock %}
+      </div>
+      <div class="logosep"></div>
+      <div class="footer">
+        <a href="/contact/">Contact</a>
+        <a href="/about/">About Microblog</a>
+        <a href="/help/">Help</a>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/faq/">Faq</a>
+      </div>
+    </div>
+  </body>
+</html>

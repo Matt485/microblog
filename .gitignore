@@ -1,0 +1,4 @@
+logo_big.svg
+logo_compact.svg
+*.sqlite3
+migrations/
