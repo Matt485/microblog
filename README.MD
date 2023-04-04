@@ -1,4 +1,4 @@
-# NAME
+# Microblog
 ___
 ![](https://img.shields.io/github/license/Matt485/microblog)
 ![](https://img.shields.io/github/actions/workflow/status/Matt485/microblog/sdsd.yml)
@@ -39,7 +39,6 @@ git clone https://github.com/Matt485/microblog.git
 ## Usage
 
 ```bash
-cd microblog
 sudo docker-compose up
 ```
 
