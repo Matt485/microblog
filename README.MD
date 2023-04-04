@@ -15,7 +15,13 @@ ___
 ## Table of content
 
 [Features](#features)  
-[Requirements](#requirements)
+[Requirements](#requirements)  
+[Installation](#installation)  
+[Usage](#usage)  
+[Limitations](#limitation)  
+[Roadmap](#roadmap)  
+[License](#license)  
+[Contributions](#contributions)  
 
 ## Features
 
