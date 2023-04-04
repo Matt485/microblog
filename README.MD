@@ -49,7 +49,7 @@ sudo docker-compose up
 
 ## Limitations
 
-`microblog` is still early in development and is not entirely suited for production yet, use at your own risk!
+microblog is still early in development and is not entirely suited for production yet, use at your own risk!
 
 ## Roadmap
 - [x] Custom CSS Support
