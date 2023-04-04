@@ -14,7 +14,7 @@ ___
 
 ## Table of content
 
-[Features](#features)
+[Features](#features)  
 [Requirements](#requirements)
 
 ## Features
