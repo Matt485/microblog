@@ -21,7 +21,7 @@ ___
 [Limitations](#limitation)  
 [Roadmap](#roadmap)  
 [License](#license)  
-[Contributions](#contributions)  
+[Contributing](#contributing)  
 
 ## Features
 
